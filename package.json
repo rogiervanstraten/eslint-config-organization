@@ -1,7 +1,7 @@
 {
-	"name": "@***REMOVED***/eslint-config-***REMOVED***",
+	"name": "eslint-config-organization",
 	"version": "1.0.0",
-	"description": "Custom ESLint config for ***REMOVED***",
+	"description": "Custom ESLint config for your organization",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"files": [
@@ -9,7 +9,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/***REMOVED***/lint.git"
+		"url": "git+https://github.com/rogiervanstraten/eslint-config-organization.git"
 	},
 	"scripts": {
 		"build": "rimraf dist && tsc -p tsconfig-build.json",
@@ -20,7 +20,7 @@
 		"format": "npm run build && prettier --write . && eslint --fix . --ext ts,tsx",
 		"prepare": "husky"
 	},
-	"author": "Rogier van Straten <rost@***REMOVED***.com>",
+	"author": "Rogier van Straten <rogier@from89.com>",
 	"contributors": [],
 	"license": "ISC",
 	"peerDependencies": {

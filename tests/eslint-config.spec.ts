@@ -1,7 +1,7 @@
 import { ESLint } from 'eslint';
 import path from 'path';
 
-const ***REMOVED***EslintConfig = path.resolve(__dirname, '../dist/index.js');
+const organizationEslintConfig = path.resolve(__dirname, '../dist/index.js');
 
 describe('ESLint Config', () => {
     let eslint: ESLint;
@@ -9,7 +9,7 @@ describe('ESLint Config', () => {
     beforeAll(() => {
         eslint = new ESLint({
             useEslintrc: false,
-            overrideConfigFile: ***REMOVED***EslintConfig,
+            overrideConfigFile: organizationEslintConfig,
         });
     });
 
