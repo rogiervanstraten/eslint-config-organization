@@ -6,7 +6,7 @@
 	"types": "dist/index.d.ts",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/***REMOVED***/lint"
+		"url": "git+https://github.com/***REMOVED***/lint.git"
 	},
 	"scripts": {
 		"build": "rimraf dist && tsc -p tsconfig-build.json",
@@ -14,7 +14,9 @@
 		"test": "jest",
 		"test:coverage": "npm test -- --coverage",
 		"test:badges": "npm run test:coverage  && jest-coverage-badges",
-		"format": "prettier --write . && eslint --fix . --ext ts,tsx"
+		"format": "prettier --write . && eslint --fix . --ext ts,tsx",
+		"prepare": "husky install",
+		"lint-staged": "lint-staged"
 	},
 	"author": "Rogier van Straten <rost@***REMOVED***.com>",
 	"contributors": [],
