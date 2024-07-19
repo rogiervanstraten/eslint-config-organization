@@ -1,20 +1,30 @@
 {
-	"name": "eslint-config-***REMOVED***",
+	"name": "@***REMOVED***/eslint-config-***REMOVED***",
 	"version": "1.0.0",
 	"description": "Custom ESLint config for ***REMOVED***",
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/***REMOVED***/lint"
+	},
 	"scripts": {
 		"build": "rimraf dist && tsc -p tsconfig-build.json",
+		"watch": "tsc -w -p tsconfig-build.json",
 		"test": "jest",
 		"test:coverage": "npm test -- --coverage",
 		"test:badges": "npm run test:coverage  && jest-coverage-badges",
 		"format": "prettier --write . && eslint --fix . --ext ts,tsx"
 	},
 	"author": "Rogier van Straten <rost@***REMOVED***.com>",
+	"contributors": [],
 	"license": "ISC",
-	"dependencies": {
-		"eslint": "^8.57.0",
+	"peerDependencies": {
+		"eslint": "^7.32.0 || ^8.2.0",
 		"eslint-config-airbnb-base": "^15.0.0"
+	},
+	"engines": {
+		"node": "^10.12.0 || >=12.0.0"
 	},
 	"devDependencies": {
 		"@types/eslint": "^8.56.10",
