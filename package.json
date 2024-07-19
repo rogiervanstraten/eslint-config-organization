@@ -1,0 +1,33 @@
+{
+	"name": "eslint-config-***REMOVED***",
+	"version": "1.0.0",
+	"description": "Custom ESLint config for ***REMOVED***",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "rimraf dist && tsc -p tsconfig-build.json",
+		"test": "jest",
+		"test:coverage": "npm test -- --coverage",
+		"test:badges": "npm run test:coverage  && jest-coverage-badges",
+		"format": "prettier --write . && eslint --fix . --ext ts,tsx"
+	},
+	"author": "Rogier van Straten <rost@***REMOVED***.com>",
+	"license": "ISC",
+	"dependencies": {
+		"eslint": "^8.57.0",
+		"eslint-config-airbnb-base": "^15.0.0"
+	},
+	"devDependencies": {
+		"@types/eslint": "^8.56.10",
+		"@types/jest": "^29.5.12",
+		"@types/node": "^20.14.11",
+		"@typescript-eslint/eslint-plugin": "^7.16.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-prettier": "^5.2.1",
+		"jest": "^29.7.0",
+		"prettier": "^3.3.3",
+		"rimraf": "^6.0.1",
+		"ts-jest": "^29.2.3",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.5.3"
+	}
+}

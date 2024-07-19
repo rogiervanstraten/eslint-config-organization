@@ -1,0 +1,21 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "env": {
+		"browser": true,
+		"es6": true,
+		"jest": true
+	},
+    "extends": [
+        "./dist/index.js"
+    ],
+	"plugins": [
+		"@typescript-eslint",
+		"prettier"
+	],
+    "parserOptions": {
+		"sourceType": "module",
+		"project": "tsconfig.json",
+		"tsconfigRootDir": "./",
+		"ecmaVersion": "latest"
+	}
+}
