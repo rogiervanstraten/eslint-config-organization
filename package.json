@@ -4,6 +4,9 @@
 	"description": "Custom ESLint config for ***REMOVED***",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/***REMOVED***/lint.git"
