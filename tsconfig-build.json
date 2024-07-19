@@ -3,6 +3,7 @@
 	"include": ["src"],
 	"exclude": ["tests", "node_modules"],
 	"compilerOptions": {
+		"rootDir": "./src",
 		"declaration": true
 	}
 }

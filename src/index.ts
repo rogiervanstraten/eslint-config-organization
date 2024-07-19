@@ -1,12 +1,12 @@
 import { Linter } from 'eslint';
 
 const config: Linter.Config = {
-    extends: 'airbnb-base',
-    rules: {
-        'no-console': 'off', // Turn off the rule that disallows console.log statements
-        indent: ['error', 4],
-        quotes: ['error', 'single'],
-    },
+	extends: 'airbnb-base',
+	rules: {
+		'no-console': ['warn'],
+		indent: ['error', 4],
+		'no-nested-ternary': ['error'],
+	},
 };
 
 export = config;
