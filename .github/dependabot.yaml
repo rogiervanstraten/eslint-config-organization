@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: daily
+    labels:
+      - 'dependabot'
+      - 'dependencies'
+    open-pull-requests-limit: 10
+    target-branch: main
+    commit-message:
+      prefix: 'build'
+      include: 'scope'
