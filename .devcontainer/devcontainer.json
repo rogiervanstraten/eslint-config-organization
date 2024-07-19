@@ -1,12 +1,12 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "dbaeumer.vscode-eslint",
-                "esbenp.prettier-vscode",
-                "orta.vscode-jest"
-            ]
-        }
-    }
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"orta.vscode-jest"
+			]
+		}
+	}
 }

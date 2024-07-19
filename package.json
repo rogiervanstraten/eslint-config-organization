@@ -15,7 +15,7 @@
 		"test:coverage": "npm test -- --coverage",
 		"test:badges": "npm run test:coverage  && jest-coverage-badges",
 		"format": "prettier --write . && eslint --fix . --ext ts,tsx",
-		"prepare": "husky install",
+		"prepare": "husky",
 		"lint-staged": "lint-staged"
 	},
 	"author": "Rogier van Straten <rost@***REMOVED***.com>",
@@ -41,5 +41,15 @@
 		"ts-jest": "^29.2.3",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.5.3"
+	},
+	"dependencies": {
+		"husky": "^9.1.1",
+		"lint-staged": "^15.2.7"
+	},
+	"lint-staged": {
+		"**/*.{ts,js}": [
+			"eslint --fix",
+			"prettier --write"
+		]
 	}
 }
