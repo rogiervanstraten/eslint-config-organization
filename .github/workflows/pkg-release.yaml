@@ -1,24 +1,33 @@
 name: Release
-
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - main
+permissions:
+  contents: write
+  pull-requests: write
 jobs:
-  build-publish-release:
-    if: github.ref_type == 'tag' && startsWith(github.ref, 'refs/tags/') && !contains(github.ref, '-')
+  release-please:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          release-type: node
+          target-branch: main
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v4
+        if: ${{ steps.release.outputs.release_created }}
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
       - run: npm ci --include=dev --ignore-scripts
+        if: ${{ steps.release.outputs.release_created }}
       - run: npm run build
+        if: ${{ steps.release.outputs.release_created }}
       - run: npm publish
+        if: ${{ steps.release.outputs.release_created }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
