@@ -1,6 +1,6 @@
 {
 	"name": "@rogiervanstraten/eslint-config-organization",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Custom ESLint config for your organization",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
