@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/rogiervanstraten/eslint-config-organization/compare/v1.0.0...v1.0.1) (2024-07-20)
+
+
+### Bug Fixes
+
+* release strategy ([#5](https://github.com/rogiervanstraten/eslint-config-organization/issues/5)) ([c65eb8d](https://github.com/rogiervanstraten/eslint-config-organization/commit/c65eb8d6cbb1099e687ad859c00246e14f41e507))
+
 ## 1.0.0 (2024-07-20)
 
 
