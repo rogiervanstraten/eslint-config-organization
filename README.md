@@ -21,24 +21,24 @@ Simply open the project in a compatible editor like Visual Studio Code, and the 
 
 ## Usage
 
-To use the `eslint-config-[abc-company]` in your projects, follow these steps:
+To use the `@[abc-company]/eslint-config-[abc-company]` in your projects, follow these steps:
 
 1. **Install the Package**: First, install the ESLint configuration package via npm or yarn:
 
    ```bash
-   npm install eslint-config-[abc-company] --save-dev
+   npm install @[abc-company]/eslint-config-[abc-company] --save-dev
    # or
-   yarn add eslint-config-[abc-company] --dev
+   yarn add @[abc-company]/eslint-config-[abc-company] --dev
    ```
 
-2. **Create/Update ESLint Configuration**: In your project root, create or update your `eslint.config.js` file.
+2. **Create/Update ESLint Configuration**: In your project root, create or update your `.eslintrc` file.
 
-3. **Import and Extend Configuration**: Inside `eslint.config.js`, import the configuration and extend it as needed. Here’s a basic example:
+3. **Import and Extend Configuration**: Inside `.eslintrc`, import the configuration and extend it as needed. Here’s a basic example:
 
-   ```javascript
-   import abcCompanyConfig from 'eslint-config-[abc-company]';
-
-   export default [abcCompanyConfig];
+   ```json
+   {
+   	"extends": "@[abc-company]/eslint-config-[abc-company]"
+   }
    ```
 
 4. **Run ESLint**: Finally, run ESLint to lint your project files:
