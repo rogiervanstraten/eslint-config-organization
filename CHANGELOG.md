@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.2](https://github.com/rogiervanstraten/eslint-config-organization/compare/v0.0.1...v0.0.2) (2024-08-07)
+
+
+### Bug Fixes
+
+* peer dependencies ([#17](https://github.com/rogiervanstraten/eslint-config-organization/issues/17)) ([b3d17ef](https://github.com/rogiervanstraten/eslint-config-organization/commit/b3d17ef88983d69d9ec4ffbbcdf4d01e4e5c7c91))
+
 ## [0.0.1](https://github.com/rogiervanstraten/eslint-config-organization/compare/v1.0.3...v0.0.1) (2024-07-20)
 
 
